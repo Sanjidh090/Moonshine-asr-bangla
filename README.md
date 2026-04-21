@@ -38,15 +38,39 @@ Likely next improvement direction: **larger and more diverse dataset + more comp
 Moonshine-asr-bangla/
 ├── README.md
 ├── data/
-│   └── README.md                  # dataset link placeholders
-└── notebooks/
-    └── moonshine-be-v1.ipynb      # main experiment notebook
+│   └── README.md                   # dataset links and notes
+├── notebooks/
+│   └── moonshine-be-v1.ipynb       # original experiment notebook
+└── scripts/
+    ├── README.md                   # quick-reference guide for all scripts
+    ├── prepare_data.py             # filter & split the raw dataset into TSVs
+    ├── train_tokenizer.py          # train Bengali SentencePiece tokenizer
+    ├── train.py                    # adapt + fine-tune Moonshine for Bengali
+    ├── transcribe.py               # single-clip and long-form inference
+    ├── evaluate.py                 # WER / CER evaluation
+    └── upload_kaggle.py            # publish checkpoint to Kaggle
 ```
+
+## Standalone Scripts
+
+The `scripts/` directory contains clean, self-contained Python scripts
+extracted from the notebook — easier to read, run individually, and reuse:
+
+| Script | Purpose |
+|---|---|
+| `prepare_data.py` | Filter clips by duration, write train/dev/test TSV splits |
+| `train_tokenizer.py` | Clean Bengali text, train 32 k SentencePiece model |
+| `train.py` | Swap vocab, freeze encoder, fine-tune decoder |
+| `transcribe.py` | Greedy inference — single clip or sliding-window long-form |
+| `evaluate.py` | WER / CER against reference text or a full TSV split |
+| `upload_kaggle.py` | Package checkpoint and upload to Kaggle |
+
+See `scripts/README.md` for full usage and CLI options.
 
 ## Main Notebook
 
 - `notebooks/moonshine-be-v1.ipynb`:
-  Complete workflow for preparation, tokenizer training, model adaptation, finetuning, and evaluation.
+  Original end-to-end experiment notebook (reference / exploration).
 
 ## Dataset Links
 
