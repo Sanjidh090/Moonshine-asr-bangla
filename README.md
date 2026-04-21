@@ -8,7 +8,7 @@ Bangla ASR experimentation built around **UsefulSensors/moonshine-base** and a c
 
 ## Current Status
 
-This repository currently contains the first end-to-end experimental notebook (`moonshine-be-v1`) and documents what has already been done:
+This repository currently contains the first end-to-end experimental notebook (`moonshine-be-v1`, where **be = Bangla Experiment**) and documents what has already been done:
 
 - dataset preparation and train/dev/test split generation
 - Bangla text cleaning and SentencePiece tokenizer training
@@ -46,7 +46,7 @@ Moonshine-asr-bangla/
 ## Main Notebook
 
 - `notebooks/moonshine-be-v1.ipynb`:
-  complete workflow for preparation, tokenizer training, model adaptation, finetuning, and evaluation.
+  Complete workflow for preparation, tokenizer training, model adaptation, finetuning, and evaluation.
 
 ## Dataset Links (Placeholders)
 
