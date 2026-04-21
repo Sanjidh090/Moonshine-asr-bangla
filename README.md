@@ -1,7 +1,7 @@
 # Moonshine ASR Bangla
 
 Bangla ASR experimentation built around **UsefulSensors/moonshine-base** and a custom Bangla tokenizer + finetuning pipeline.
-
+# Until now,notebook is the only thing I have touched,,,copilot is for decoration, work ongoing
 ## Owner
 
 - Sanjid Hasan (`sanjidh090`)
