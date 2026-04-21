@@ -48,18 +48,18 @@ Moonshine-asr-bangla/
 - `notebooks/moonshine-be-v1.ipynb`:
   Complete workflow for preparation, tokenizer training, model adaptation, finetuning, and evaluation.
 
-## Dataset Links (Placeholders)
-
-Please fill these links later.
+## Dataset Links
 
 | Purpose | Link |
 |---|---|
-| Primary training dataset | TODO |
+| Primary training dataset (Frovolts Random) | [sanjidh090/frovolts-random](https://www.kaggle.com/datasets/sanjidh090/frovolts-random/data) |
 | Validation dataset | TODO |
 | Test dataset | TODO |
 | Auxiliary/extra dataset | TODO |
 
-More detailed placeholders are also in `data/README.md`.
+> The primary dataset may be extended further in future iterations.
+
+More detailed notes are also in `data/README.md`.
 
 ## Next Steps
 
